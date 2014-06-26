@@ -1,4 +1,4 @@
 language: objective-c
-xcode_project: code climate.xcodeproj # path to your xcodeproj folder
-xcode_scheme: code climateTests
-xcode_sdk: iphonesimulator7.1
+xcode_project: codeclimate.xcodeproj # path to your xcodeproj folder
+xcode_scheme: codeclimateTests
+# xcode_sdk: iphonesimulator7.1
