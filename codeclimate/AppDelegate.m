@@ -8,6 +8,14 @@
 
 #import "AppDelegate.h"
 
+@interface AppDelegate() <PKRevealing>
+
+#pragma mark - Properties
+@property (nonatomic, strong, readwrite) PKRevealController *revealController;
+
+@end
+
+
 @implementation AppDelegate
 
 @synthesize managedObjectContext = _managedObjectContext;
@@ -16,10 +24,16 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
-    // Override point for customization after application launch.
-    self.window.backgroundColor = [UIColor whiteColor];
-    [self.window makeKeyAndVisible];
+    UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"iPhone_Storyboard"
+                                                         bundle: nil];
+    
+    UIViewController *settingsViewController = [storyboard instantiateViewControllerWithIdentifier:@"settings"];
+    UIViewController *leftViewController = [storyboard instantiateViewControllerWithIdentifier:@"left"];
+    
+    
+    self.revealController = [PKRevealController revealControllerWithFrontViewController:settingsViewController leftViewController:leftViewController];
+    
+    self.window.rootViewController = self.revealController;
     return YES;
 }
 
@@ -50,6 +64,21 @@
     // Saves changes in the application's managed object context before the application terminates.
     [self saveContext];
 }
+
+#pragma mark - PKRevealing
+
+- (void)revealController:(PKRevealController *)revealController didChangeToState:(PKRevealControllerState)state
+{
+    NSLog(@"%@ (%d)", NSStringFromSelector(_cmd), (int)state);
+}
+
+- (void)revealController:(PKRevealController *)revealController willChangeToState:(PKRevealControllerState)next
+{
+    PKRevealControllerState current = revealController.state;
+    NSLog(@"%@ (%d -> %d)", NSStringFromSelector(_cmd), (int)current, (int)next);
+}
+
+#pragma mark - Core Data
 
 - (void)saveContext
 {
