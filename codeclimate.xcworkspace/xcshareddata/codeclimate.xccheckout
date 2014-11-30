@@ -5,34 +5,34 @@
 	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
 	<false/>
 	<key>IDESourceControlProjectIdentifier</key>
-	<string>030D716E-B57B-40C6-B424-4E0B91E88707</string>
+	<string>52C2E46B-1A2D-4F4B-BC87-CFBAE59464F0</string>
 	<key>IDESourceControlProjectName</key>
 	<string>codeclimate</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
-		<key>54E11DF7-CDB3-4CE0-953D-FD201C2300B8</key>
-		<string>https://github.com/damncreative/codeclimate-ios-app.git</string>
+		<key>77B37742-E51B-4057-A722-6132A3F7AF70</key>
+		<string>https://github.com/Naxmeify/codeclimate-ios-app.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
 	<string>codeclimate.xcworkspace</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
-		<key>54E11DF7-CDB3-4CE0-953D-FD201C2300B8</key>
+		<key>77B37742-E51B-4057-A722-6132A3F7AF70</key>
 		<string>..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
-	<string>https://github.com/damncreative/codeclimate-ios-app.git</string>
+	<string>https://github.com/Naxmeify/codeclimate-ios-app.git</string>
 	<key>IDESourceControlProjectVersion</key>
 	<integer>110</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
-	<string>54E11DF7-CDB3-4CE0-953D-FD201C2300B8</string>
+	<string>77B37742-E51B-4057-A722-6132A3F7AF70</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
 			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>54E11DF7-CDB3-4CE0-953D-FD201C2300B8</string>
+			<string>77B37742-E51B-4057-A722-6132A3F7AF70</string>
 			<key>IDESourceControlWCCName</key>
 			<string>codeclimate-ios-app</string>
 		</dict>
